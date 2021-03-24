@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>E-POKRATE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/formulaire-patient.css">
+    <!----------------------- favicon ------------------------------->
+    <link rel="manifest" href="/manifest.json">
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="images/EPK-icon-152x152.png">
+    <meta name="theme-color" content="white" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="E-POKRATE">
+    <meta name="msapplication-TileImage" content="images/EPK-icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+
+</head>
+
+<body>
+    <!--## Titre de la page connexion ##-->
+    <div class="container">
+        <form id="contact" action="" method="post">
+            <div class="logo">
+                <img src="images/LOGO-epokrate.png" alt="logo de E-POKRATE">
+            </div>
+            <h3>Formulaire patient</h3>
+            <h4>Ce formulaire est uniquement destiné aux patients</h4>
+            <fieldset>
+                <label for="name">Nom utilisateur</label>
+                <input placeholder=" Votre nom utilisateur" type="text" tabindex="1" required autofocus>
+            </fieldset>
+            <fieldset>
+                <label for="Email">Email</label>
+                <input placeholder="Votre email" type="email" tabindex="2" required>
+            </fieldset>
+            <fieldset>
+                <label for="Votre mot de passe">Votre mot de passe</label>
+                <input placeholder="Votre mot de passe" type="password" tabindex="2" required>
+            </fieldset>
+            <fieldset>
+                <label for="Confirmer le mot de passe">Confirmer le mot de passe</label>
+                <input placeholder="Confirmer le mot de passe" type="password" tabindex="4" required>
+            </fieldset>
+            <!------ Le selecteur : SEXE ------>
+            <fieldset>
+                <label for="name">Sexe</label>
+                <div class="select">
+                    <select name="format" id="format">
+                            <option selected disabled>Sexe</option>
+                            <option value="Homme">Homme</option>
+                            <option value="Femme">Femme</option>
+                        </select>
+                </div>
+            </fieldset>
+            <fieldset>
+                <label for="Numero de Telephone">Numero de Telephone</label>
+                <input placeholder="Votre numero de Telephone" type="tel" tabindex="4" required>
+            </fieldset>
+            <!------ Le selecteur : GROUPE SANGUIN ------>
+            <fieldset>
+                <label for="name">Groupe sanguin</label>
+                <div class="select">
+                    <select name="format" id="format">
+                            <option selected disabled>---Choisir le groupe sanguin---</option>
+                            <option value="Homme">O</option>
+                            <option value="Femme">A</option>
+                            <option value="Homme">B</option>
+                            <option value="Femme">AB</option>
+                        </select>
+                </div>
+            </fieldset>
+            <fieldset>
+                <label for="Votre taille">Taille</label>
+                <input placeholder="Votre taille" type="number" tabindex="4" required>
+            </fieldset>
+            <fieldset>
+                <label for="Votre poids">Poids</label>
+                <input placeholder="Votre poids" type="number" tabindex="4" required>
+            </fieldset>
+            <fieldset>
+                <label for="Votre lieu">Lieu</label>
+                <input placeholder="Votre lieu" type="text" tabindex="4" required>
+            </fieldset>
+            <fieldset>
+                <label for="antécédents médicaux">Antécédents médicaux</label>
+                <textarea placeholder="Vos antécédents médicaux..." tabindex="5" required></textarea>
+            </fieldset>
+            <fieldset>
+                <button name="submit" type="submit" id="contact-submit" data-submit="...Sending"><a href="nos-services.html">Envoyer</a></button>
+            </fieldset>
+        </form>
+
+
+    </div>
+
+    <main>
+
+        <!--## Fin du main ##-->
+    </main>
+    <!--File main.js 
+    <script src="js/main.js"></script>-->
+</body>
+
+</html>

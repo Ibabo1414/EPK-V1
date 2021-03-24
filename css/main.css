@@ -1,0 +1,535 @@
+@import url('https://fonts.googleapis.com/css2?family=Rationale&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rationale&family=Roboto:wght@300&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #FBEFFF;
+}
+
+
+/*============== Le titre de la page de connexion ==============*/
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 79vh;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+/*==============  PAGE : 1 D'ACCUEIL ==============*/
+
+#header-sroll {
+    /*position: fixed;*/
+    height: 70px;
+    /*background: #FBEFFF;*/
+    left: 0;
+    top: 0;
+    float: left;
+    width: 100%;
+}
+
+#header-sroll h1 {
+    color: #BB6BD9;
+    /*font-size: 22px;*/
+    font-size: 22px;
+    font-family: 'Rationale', sans-serif;
+    text-align: center;
+    line-height: 30px;
+}
+
+
+/* image de connexion */
+
+img {
+    width: 280px;
+    height: 200px;
+    margin-top: 10px;
+    /*margin-bottom: 10px;*/
+}
+
+
+/* Tout le contenu textuelle */
+
+.textes {
+    text-align: center;
+}
+
+.textes h2 {
+    font-family: 'Roboto', sans-serif;
+    color: #BB6BD9;
+    font-size: 20px;
+    /*top: 330px;*/
+    margin-bottom: -1px;
+}
+
+.textes p {
+    font-family: 'Roboto', sans-serif;
+    color: #4F4B4B;
+    line-height: 14, 01px;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+}
+
+.text-2 {
+    text-align: center;
+    color: #4F4B4B;
+}
+
+
+/* les boutons pour la page d'accueil */
+
+.bouton1,
+.bouton1-2 {
+    width: 260px;
+    height: 33px;
+    font-family: 'Open Sans', sans-serif;
+    outline: none;
+    padding: 9px 0;
+    margin-top: 2px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    background: #6F21B8;
+    border: 1px solid #333333;
+    box-sizing: border-box;
+    border-radius: 50px;
+}
+
+.bouton1 a,
+.bouton1-2 a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.bouton1-2 {
+    background: #2CED34;
+}
+
+.compte {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin-top: -40px;
+}
+
+.compte p a {
+    font-size: 11px;
+    text-decoration: none;
+    color: #000;
+}
+
+.compte p a span {
+    color: #BB6BD9;
+}
+
+
+/*============== Demande de consultation ==================*/
+
+
+/*=============*/
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 1%;
+    margin-bottom: -30px;
+}
+
+button::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+#calendari {
+    margin: 20px 0;
+    position: relative;
+    overflow: hidden;
+    height: 310px;
+    width: 350px;
+    font-size: 14px;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+table {
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 350px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(0);
+    transition: all 0.3s ease;
+}
+
+table.actiu {
+    transform: translateX(0px)top;
+}
+
+table.inactiu {
+    transition: all 0.3s 0.01s ease;
+}
+
+table.amagat-esquerra {
+    transform: translateX(-299px);
+}
+
+table.amagat-dreta {
+    transform: translateX(300px);
+}
+
+td,
+th {
+    text-align: center;
+    background-color: #fff;
+}
+
+th {
+    padding: 10px;
+}
+
+tr:first-child th {
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+    border-left: none;
+    border-top: none;
+}
+
+td:last-child,
+th:last-child {
+    border-right: none;
+}
+
+th {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    color: #000000;
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.2);
+    font-weight: normal;
+}
+
+th .any {
+    font-size: 20px;
+    font-weight: bolder;
+    /*display: block;*/
+    text-shadow: none;
+    color: #000000;
+    margin-left: 5px;
+}
+
+tr:nth-child(2) th {
+    padding: 5px;
+}
+
+td {
+    padding: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+td>span {
+    color: #000000;
+    padding: 10px;
+    display: block;
+    border: 1px solid rgb(0 0 0 / 5%);
+    transition: border 0.3s ease;
+}
+
+td:nth-child(even)>span {
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+td:last-child>span,
+td:nth-child(6)>span {
+    color: #000000;
+}
+
+td.avui>span {
+    font-weight: bold;
+    background-color: #3547E9;
+    color: #fff;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+td.fora>span {
+    opacity: 0.2;
+}
+
+td>span:hover {
+    background: #a57cb6;
+    color: #fff;
+}
+
+.boto-next,
+.boto-prev {
+    background: #ffffff;
+    /*color: #fff;*/
+    font-family: inherit;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    text-shadow: inherit;
+    padding: 2px 10px 5px 10px;
+    line-height: 1px;
+    height: 30px;
+    width: 30px;
+    vertical-align: middle;
+    border-radius: 100%;
+    position: absolute;
+    top: 15px;
+}
+
+.boto-next {
+    right: 10px;
+    padding-left: 13px;
+}
+
+.boto-prev {
+    left: 270px;
+    padding-right: 19px;
+}
+
+.boto-next:hover,
+.boto-prev:hover {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button:focus {
+    outline: none;
+}
+
+footer {
+    text-align: center;
+    color: #ddd;
+    font-weight: normal;
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.2);
+    font-size: 0.8em;
+    padding: 20px;
+}
+
+footer a,
+footer a:link {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/*==== Bouton demande de consultation ====*/
+
+.consul {
+    display: flex;
+}
+
+.button {
+    border: none;
+    color: #000000;
+    padding: 8px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 19px;
+    font-weight: bolder;
+    /*margin: 4px 2px;*/
+    cursor: pointer;
+    width: 102px;
+    height: 36px;
+}
+
+.button1 {
+    background-color: #C4C4C4;
+}
+
+.button2 {
+    background-color: #1e950ad9;
+    color: #ffffff;
+    border: none;
+    margin-left: auto;
+    margin-top: 20px;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 19px;
+    font-weight: bolder;
+    /*margin: 4px 2px;*/
+    cursor: pointer;
+    width: 217px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+.button2 a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/*==============  PAGE 9 : mon ordonnance du 23/10/2020 ==============*/
+
+#lordonnance {
+    height: 70px;
+    background: #110EBC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    left: 0;
+    top: 0;
+    float: left;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#lordonnance h1 {
+    color: #fff;
+    /*font-size: 22px;*/
+    font-size: 18px;
+    font-family: 'Rationale', sans-serif;
+    text-align: center;
+    line-height: 43px;
+}
+
+.textesordo {
+    padding-top: 1em;
+    width: 310px;
+    height: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 13px;
+    text-align: center;
+    color: #4F4B4B;
+}
+
+img.monordonnance {
+    width: 277px;
+    height: 356px;
+    left: 42px;
+    margin-bottom: 2em;
+}
+
+.bouton2,
+.bouton2-2 {
+    width: 140px;
+    height: 33px;
+    font-family: 'Open Sans', sans-serif;
+    outline: none;
+    padding: 9px 0;
+    margin-top: 2px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    background: #1e950ad9;
+    border: 1px solid #1e950ad9;
+    box-sizing: border-box;
+    border-radius: 50px;
+}
+
+.bouton2 a,
+.bouton2-2 a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.bouton2 {
+    margin-right: 1em;
+}
+
+div#ordobutton {
+    display: flex;
+    /*flex-direction: column;*/
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*==============  PAGE 10 : Choisissez le jour et l’heure de la livraison ==============*/
+
+.bouton3-2 {
+    width: 171px;
+    height: 36px;
+    font-family: 'Open Sans', sans-serif;
+    outline: none;
+    padding: 9px 0;
+    margin-top: 2px;
+    margin-bottom: 18px;
+    margin-left: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    background: #F10000;
+    border: 1px solid #F10000;
+    box-sizing: border-box;
+    border-radius: 1px;
+}
+
+.bouton3-2 a {
+    text-decoration: none;
+    color: #fff;
+}
+
+main>.paragraphe_ordo {
+    width: 310px;
+    height: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 13px;
+    text-align: center;
+    color: #4F4B4B;
+}
+
+
+/* Les medias query */
+
+@media screen and (min-width: 760px) and (max-width: 1206px) {
+    #header-sroll h1 {
+        font-size: 30px;
+        line-height: 90px;
+    }
+}
+
+@media screen and (min-width: 321px) and (max-width: 759px) {
+    #header-sroll h1 {
+        font-size: 30px;
+        line-height: 90px;
+    }
+}
+
+@media screen and (min-width: 150px) and (max-width: 348px) {
+    .card {
+        margin: 0.1rem;
+    }
+}

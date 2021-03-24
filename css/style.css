@@ -1,0 +1,727 @@
+@import url('https://fonts.googleapis.com/css2?family=Rationale&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rationale&family=Roboto:wght@300&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #FBEFFF;
+}
+
+
+/*============== Le titre de la page de connexion ==============*/
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 79vh;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+/*==============  PAGE : 1 D'ACCUEIL ==============*/
+
+#header-sroll {
+    /*position: fixed;*/
+    height: 70px;
+    /*background: #FBEFFF;*/
+    left: 0;
+    top: 0;
+    float: left;
+    width: 100%;
+}
+
+#header-sroll h1 {
+    color: #BB6BD9;
+    /*font-size: 22px;*/
+    font-size: 22px;
+    font-family: 'Rationale', sans-serif;
+    text-align: center;
+    line-height: 30px;
+}
+
+
+/* image de connexion */
+
+img {
+    width: 280px;
+    height: 200px;
+    margin-top: 10px;
+    /*margin-bottom: 10px;*/
+}
+
+
+/* Tout le contenu textuelle */
+
+.textes {
+    text-align: center;
+}
+
+.textes h2 {
+    font-family: 'Roboto', sans-serif;
+    color: #BB6BD9;
+    font-size: 20px;
+    /*top: 330px;*/
+    margin-bottom: -1px;
+}
+
+.textes p {
+    font-family: 'Roboto', sans-serif;
+    color: #4F4B4B;
+    line-height: 14, 01px;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+}
+
+.text-2 {
+    text-align: center;
+    color: #4F4B4B;
+}
+
+
+/* les boutons pour la page connexion */
+
+.bouton1,
+.bouton1-2 {
+    width: 260px;
+    height: 33px;
+    font-family: 'Open Sans', sans-serif;
+    outline: none;
+    padding: 9px 0;
+    margin-top: 2px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    background: #6F21B8;
+    border: 1px solid #333333;
+    box-sizing: border-box;
+    border-radius: 50px;
+}
+
+.bouton1 a,
+.bouton1-2 a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.bouton1-2 {
+    background: #2CED34;
+}
+
+
+/* les champs de saisie */
+
+input {
+    font-family: 'Roboto', sans-serif;
+    background: #FFFFFF;
+    box-sizing: border-box;
+    font-size: 12px;
+    text-align: center;
+    width: 240px;
+    height: 30px;
+    border: 1px solid #333333;
+    position: relative;
+    border-radius: 50px;
+    margin-bottom: 18px;
+}
+
+.input2 {
+    font-family: 'Roboto', sans-serif;
+    background: #C4C4C4;
+    box-sizing: border-box;
+    font-size: 12px;
+    text-align: center;
+    width: 171px;
+    height: 36px;
+    color: #000000;
+    border: 1px solid #C4C4C4;
+    /*position: relative;*/
+    border-radius: 1px;
+    margin-bottom: 18px;
+    margin-left: 10px;
+}
+
+
+/* Bouton de connexion  */
+
+.bouton {
+    width: 240px;
+    height: 30px;
+    font-family: 'Open Sans', sans-serif;
+    border: 1px;
+    outline: none;
+    padding: 9px 0;
+    margin-top: 2px;
+    margin-bottom: 35px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    background: #BB6BD9;
+    text-decoration: none;
+    color: #fff;
+    display: block;
+}
+
+.bouton a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.compte {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin-top: -40px;
+}
+
+.compte p a {
+    font-size: 11px;
+    text-decoration: none;
+    color: #000;
+}
+
+.compte p a span {
+    color: #BB6BD9;
+}
+
+
+/*==============  PAGE 2 : NOS SERVICES ==============*/
+
+.header2 {
+    height: 70px;
+}
+
+#header-sroll2 {
+    height: 70px;
+    background: #9B51E0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    left: 0;
+    top: 0;
+    float: left;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#header-sroll2 h1,
+#Ordonnances1 h1 {
+    color: #ffffff;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    font-family: 'Rationale', sans-serif;
+    text-align: center;
+    line-height: 40px;
+}
+
+
+/*** Tous les services ***/
+
+.card {
+    border-radius: 2px;
+    display: inline-block;
+    width: 91px;
+    height: 100px;
+    margin: 0.5rem;
+    position: relative;
+}
+
+.card>img {
+    width: 91px;
+    height: 100px;
+    margin-top: -7px;
+}
+
+
+/* Bouton des services  */
+
+.bouton2 {
+    box-shadow: 0 5px 5px rgb(255 255 255 / 30%), 0 5px 5px rgb(255 255 255 / 22%);
+    width: 83px;
+    height: 13px;
+    font-family: 'Open Sans', sans-serif;
+    border: 1px solid #1E950A;
+    border-radius: 40px;
+    outline: none;
+    padding: 2px 0;
+    margin-top: 10px;
+    margin-bottom: 47px;
+    font-size: 7px;
+    text-align: center;
+    font-weight: 600;
+    /*text-transform: uppercase;*/
+    letter-spacing: 0.1em;
+    background: #1E950A;
+    text-decoration: none;
+    color: #fff;
+}
+
+.bouton2 a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/*==============  PAGE 3 : Choisir son médecin ==============*/
+
+#tous-les-cards1 {
+    margin-bottom: 15px;
+}
+
+img.image-service {
+    width: 91px;
+    height: 93px;
+    margin-bottom: -2px;
+    margin-top: 1px;
+    line-height: 90px;
+}
+
+.card>p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 8px;
+    line-height: 0.7em;
+    font-style: normal;
+    font-weight: normal;
+    color: #335076;
+}
+
+.card>p.medg {
+    /*font-weight: bold;*/
+    color: #7710A8;
+}
+
+.card>h2 {
+    font-family: 'Rationale', sans-serif;
+    letter-spacing: 1px;
+    line-height: 0.7em;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 9px;
+}
+
+.card>h3 {
+    font-size: 9px;
+    line-height: 0.3em;
+    margin-bottom: 2px;
+}
+
+.card>.etoiles {
+    margin-bottom: -3px;
+}
+
+.card>.etoiles span {
+    font-size: 9px;
+}
+
+.checked {
+    color: orange;
+}
+
+.card>p.prix {
+    /*font-weight: bold;*/
+    color: #7710A8;
+    font-weight: bolder;
+    font-size: 11px;
+    margin-bottom: -1px;
+}
+
+hr {
+    width: 252px;
+    height: 0px;
+    color: #9B51E0;
+    mix-blend-mode: normal;
+    border: 1px solid #9B51E0;
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+
+
+/*==============  PAGE 6 : paiement ==============*/
+
+main>img.img-paiement {
+    width: 290px;
+    height: 125px;
+}
+
+#header-sroll2 h1.paiement-titre {
+    font-size: 20px;
+}
+
+.textes h2.paiement-soustitre {
+    font-size: 11px;
+    color: #335076;
+    font-weight: normal;
+}
+
+.text-2 p.paiement-mode {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    color: #000000;
+    margin-left: -11em;
+}
+
+.text-2 p.paiement-mode2 {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    color: #000000;
+    margin-left: -7em;
+    margin-top: 0.70em;
+}
+
+.card0 img.img-modepaiement {
+    width: 59px;
+    height: 55px;
+    padding-right: -3em;
+}
+
+.card0 {
+    border-radius: 2px;
+    display: inline-block;
+    width: 59px;
+    height: 55px;
+    margin: 0.4rem;
+    position: relative;
+}
+
+.input3-paiement {
+    font-family: 'Roboto', sans-serif;
+    background: #FFFFFF;
+    box-sizing: border-box;
+    font-size: 12px;
+    text-align: center;
+    width: 170px;
+    height: 30px;
+    border: 1px solid #333333;
+    position: relative;
+    border-radius: 50px;
+    margin-bottom: 18px;
+    margin-top: 1.2em;
+}
+
+.text-2 p.montant-a-payer {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 0.1px;
+    color: #000000;
+    margin-left: -9em;
+}
+
+.text-2 p.montant-a-payer2 {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    margin-top: 25px;
+    line-height: 0.1px;
+    color: #000000;
+    margin-left: -0.1em;
+}
+
+.text-2 p.montant-a-payer3 {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    margin-top: 25px;
+    line-height: 0.1px;
+    color: #000000;
+    margin-left: -0.1em;
+}
+
+.text-2 p.montant-a-payer4 {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    margin-top: 25px;
+    line-height: 10px;
+    color: #000000;
+    margin-left: 5.5em;
+}
+
+.text-2 span.payer1 {
+    margin-left: 2em;
+    color: #6F21B8;
+    font-weight: bolder;
+}
+
+.text-2 span.payer2 {
+    margin-left: 7em;
+    color: #6F21B8;
+    font-weight: bolder;
+}
+
+.text-2 span.payer3 {
+    margin-left: 7em;
+    color: #1DA556;
+    font-weight: bolder;
+}
+
+.button3 {
+    background-color: #1e950ad9;
+    color: #ffffff;
+    border: none;
+    float: right;
+    margin-top: 20px;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: bolder;
+    cursor: pointer;
+    width: 230px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+.button3 a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/*==============  PAGE 7 : confirmation de commande ==============*/
+
+
+/**/
+
+#main_confirmation-commande {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 98vh;
+}
+
+#main_confirmation-commande section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgba(255, 255, 255, .95);*/
+    padding: 20px 30px;
+    padding-top: 6em;
+    border-radius: 5px;
+    max-width: 100%;
+}
+
+main section p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+    line-height: 25px;
+    padding: 0;
+    margin: 0;
+    color: #000000;
+}
+
+.confirmation-commande1,
+.confirmation-commande2,
+.confirmation-commande3 {
+    margin-bottom: 15px;
+}
+
+.button4 {
+    background: #7710A8;
+    color: #ffffff;
+    border: none;
+    margin-top: 20px;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: bolder;
+    cursor: pointer;
+    width: 200px;
+    height: 58px;
+    border-radius: 20px;
+}
+
+.button4 a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/*==============  PAGE 8 : mes ordonnances ==============*/
+
+#Ordonnances1 h1 {
+    float: left;
+    padding-left: 2em;
+}
+
+#Ordonnances1 {
+    height: 70px;
+    background: #110EBC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    left: 0;
+    top: 0;
+    float: left;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.imagesordo>img {
+    height: 81px;
+    width: 136px;
+    margin-left: -3em;
+    /* position: absolute;
+    left: 0%;*/
+    /*right: 62.5%;
+    top: 10.61%;*/
+    /*bottom: 17.23%;*/
+}
+
+.imagesordo {
+    height: 113px;
+    width: 345px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #C4C4C4;
+}
+
+p.text-ordo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 5em;
+}
+
+p.text-ordo>span {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 4.50em;
+    padding-top: 1em;
+    color: #000000;
+}
+
+.button6 {
+    background-color: #1e950ad9;
+    color: #ffffff;
+    border: none;
+    /*float: right;
+   margin-top: 20px;
+    padding: 10px 32px;*/
+    text-align: center;
+    text-decoration: none;
+    /*display: inline-block;*/
+    font-size: 15px;
+    font-weight: bolder;
+    cursor: pointer;
+    width: 160px;
+    height: 35px;
+    border-radius: 20px;
+    margin-bottom: 15%;
+}
+
+.buttonordo {
+    background: #E11010;
+}
+
+
+/*==============  PAGE 11 : confirmation  du téléchargement ==============*/
+
+.button2 {
+    width: 140px;
+    height: 33px;
+    font-family: 'Open Sans', sans-serif;
+    outline: none;
+    padding: 9px 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    background: #1e950ad9;
+    border: 1px solid #1e950ad9;
+    box-sizing: border-box;
+    border-radius: 50px;
+}
+
+.button2 {
+    text-decoration: none;
+    color: #fff;
+}
+
+#livraison {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #F0FFF6;
+}
+
+#main_confirmation-livraison section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgba(255, 255, 255, .95);*/
+    padding: 20px 30px;
+    padding-top: 6em;
+    border-radius: 5px;
+    max-width: 100%;
+}
+
+
+/* Les medias query */
+
+@media screen and (min-width: 760px) and (max-width: 1206px) {
+    #header-sroll h1 {
+        font-size: 30px;
+        line-height: 90px;
+    }
+}
+
+@media screen and (min-width: 321px) and (max-width: 759px) {
+    #header-sroll h1 {
+        font-size: 30px;
+        line-height: 90px;
+    }
+}
+
+@media screen and (min-width: 150px) and (max-width: 348px) {
+    .card {
+        margin: 0.1rem;
+    }
+}
+
+@media screen and (min-width: 150px) and (max-width: 320px) {
+    main#modedepaiement {
+        height: 100vh;
+    }
+    .button3 {
+        margin-bottom: 2em;
+    }
+}
